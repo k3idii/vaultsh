@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VALUT_DIR="~/.vaultsh/"
+VALUT_DIR="${HOME}/.vaultsh/"
 mkdir -p ${VALUT_DIR}
 
 function mkkey(){  echo "${1}" | md5sum | sed "s/ .*//" ; }
